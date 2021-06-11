@@ -1,0 +1,6 @@
+Under Powershell
+    aws s3 ls s3://<"bucket_name"> --recursive --human-readable --summarize | Select-String -Pattern "Total"
+
+
+Under Linux
+    aws s3 ls s3://<"bucket_name"> --recursive --human-readable --summarize | greg 'Total'
